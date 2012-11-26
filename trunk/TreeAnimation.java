@@ -1,3 +1,14 @@
+/**
+ * Copyright © 2011 Parag Patil
+ * Licensed under the Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * You may not use this file except in compliance with  Apache License, Version 2.0
+ * You may obtain a copy of the license at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ 
+**/
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -57,24 +68,11 @@ class PCanvas extends Canvas {
 		double x2 = x1 + l * Math.cos(theta);
 		double y2 = y1 + l * Math.sin(theta);
 		
-		//System.out.println(String.format("x1 = %f, y1 = %f, x2 = %f, y2 = %f, l = %f, Theta = %f", x1, y1, x2, y2, l, theta));
 		
 		g.drawLine((int)x1, (int)(SIZE_Y - y1), (int)x2, (int)(SIZE_Y - y2));
-		/*
-		try {
-			if (l >= INITIAL_LENGTH * .05) {
-				Thread.sleep(0, WAIT);
-			}
-		}
-		catch (InterruptedException e) {
-		}
-		*/
-		//drawLine2(g, x2, y2, l * TRIM_FACTOR, theta - 3 * BRANCH_ANGLE);
-		//drawLine2(g, x2, y2, l * TRIM_FACTOR, theta - 2 * BRANCH_ANGLE);
+
 		drawLine2(g, x2, y2, l * TRIM_FACTOR, theta - BRANCH_ANGLE);
 		drawLine2(g, x2, y2, l * TRIM_FACTOR, theta + BRANCH_ANGLE);
-		//drawLine2(g, x2, y2, l * TRIM_FACTOR, theta + 2 * BRANCH_ANGLE);
-		//drawLine2(g, x2, y2, l * TRIM_FACTOR, theta + 3 * BRANCH_ANGLE);
 	}
 	
 }
