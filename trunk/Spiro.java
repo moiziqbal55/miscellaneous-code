@@ -1,3 +1,14 @@
+/**
+ * Copyright © 2011 Parag Patil
+ * Licensed under the Apache License, Version 2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * You may not use this file except in compliance with  Apache License, Version 2.0
+ * You may obtain a copy of the license at
+ * http://www.apache.org/licenses/LICENSE-2.0
+ 
+**/
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -44,12 +55,12 @@ class PCanvas extends Canvas {
 	public static int SIZE_X;
 	public static int SIZE_Y;
 	
-	private double R1 = 157;
-	private double R2 = 231;
-	private double R3 = 133;
+	private double R1 = 257;
+	private double R2 = 111;
+	private double R3 = 123;
 	
-	private double RA1 = 223;
-	private double RA2 = 446;
+	private double RA1 = 133;
+	private double RA2 = 246;
 	
 	private BufferedImage img;
 	PCanvas(int sizex, int sizey) {
@@ -72,12 +83,12 @@ class PCanvas extends Canvas {
 			
 			
 			g.fillOval(SIZE_X/2 - (int)(R1 * Math.cos(Math.toRadians(theta1)) 
-										- R2 * Math.cos(Math.toRadians(theta2)))
-										//+ R3 * Math.cos(Math.toRadians(theta3)))										
+										- R2 * Math.cos(Math.toRadians(theta2)))										
+										
 										
 						,SIZE_Y/2 - (int)(R1 * Math.sin(Math.toRadians(theta1)) 
 										- R2 * Math.sin(Math.toRadians(theta2)))
-										//+ R3 * Math.sin(Math.toRadians(theta3))) 
+										
 										
 						,1 
 						,1);
