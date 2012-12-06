@@ -1,5 +1,5 @@
 /**
- * Copyright © 2011 Parag Patil
+ * Copyright Â© 2011 Parag Patil
  * Licensed under the Apache License, Version 2.0
  * http://www.apache.org/licenses/LICENSE-2.0
  *
@@ -25,10 +25,7 @@ public class TreeAnimation {
 		pframe.setVisible(true);
     }
 }
-class PFrame extends JFrame {
-	public void paint(Graphics g) {
-		System.out.println("PFrame paint called");	
-	}
+class PFrame extends JFrame {	
 	PFrame() {
 		setUndecorated(true);
 		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
